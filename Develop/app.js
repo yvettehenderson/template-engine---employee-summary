@@ -106,7 +106,7 @@ function app() {
         addIntern();
         break;
       default:
-        buildTeam();
+        makeTeam();
       }
     });
   }
@@ -241,7 +241,7 @@ function app() {
     });
   }
 
-  function buildTeam() {
+  function makeTeam() {
     if (!fs.existsSync(OUTPUT_DIR)) {
       fs.mkdirSync(OUTPUT_DIR)
     }
